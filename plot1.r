@@ -1,5 +1,5 @@
 # Base Table Read
-df <- read.table("household_power_consumption.txt",sep=";",header=TRUE)
+df <- read.table("household_power_consumption.txt",sep=";",header=TRUE, na.strings="?")
   
 # Reassign Date var to Date Class with format
 df$Date <- as.Date(df$Date,format="%d/%m/%Y")
